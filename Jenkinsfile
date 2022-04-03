@@ -102,7 +102,7 @@
 //  }
 
  pipeline {
-     agent none
+     agent any
      stages {
          stage('Non-Sequential Stage') {
              steps {
