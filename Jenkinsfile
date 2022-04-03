@@ -9,6 +9,10 @@ pipeline {
     pollSCM('*/1 * * * *')
   }
 
+  tool {
+    maven 'maven-3.8.5'
+  }
+
   environment {
     ENV_URL = "pipeline.google.com"
     SSH_CREDS = credentials("SSH")
