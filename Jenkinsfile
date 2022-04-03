@@ -9,7 +9,7 @@ pipeline {
     pollSCM('*/1 * * * *')
   }
 
-  tool {
+  tools {
     maven 'maven-3.8.5'
   }
 
