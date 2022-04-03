@@ -29,6 +29,9 @@ pipeline {
   stages {
 
     stage('One') {
+      when {
+        environment name: "CHOICE", value: 'One'
+      }
       environment {
         ENV_URL = "stage.google.com"
       }
@@ -44,6 +47,9 @@ pipeline {
     }
 
     stage('Two') {
+      when {
+              environment name: "CHOICE", value: 'Two'
+      }
 
       input {
           message "Should we continue?"
