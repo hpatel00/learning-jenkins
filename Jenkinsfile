@@ -81,19 +81,19 @@ pipeline {
        parallel {
             stage('One') {
                 steps {
-                    sh 'sleep 10'
+                    sh 'sleep 3'
                 }
             }
 
             stage('Two') {
                 steps {
-                    sh 'sleep 10'
+                    sh 'sleep 3'
                 }
             }
 
             stage('Three') {
                 steps {
-                    sh 'sleep 10'
+                    sh 'sleep 3'
                 }
             }
        }
