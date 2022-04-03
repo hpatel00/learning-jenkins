@@ -30,6 +30,7 @@ pipeline {
         sh '''
             echo ENV_URL = ${ENV_URL}
             echo -e "\\e[31mHello"
+            env
         '''
       }
     }
