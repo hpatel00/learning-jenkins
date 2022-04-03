@@ -75,7 +75,7 @@
 
 pipeline {
   agent {
-    agent { node { label 'workstation' } }
+    node { label 'workstation' } }
   }
   stages {
 
