@@ -78,22 +78,21 @@ pipeline {
   stages {
 
     stage('One') {
-              steps {
-                sh 'sleep 10'
-              }
-            }
+        steps {
+            sh 'sleep 10'
+        }
+    }
 
     stage('Two') {
-      steps {
-        sh 'sleep 10'
-      }
+        steps {
+            sh 'sleep 10'
+        }
     }
 
     stage('Three') {
-      steps {
-        sh 'sleep 10'
-      }
+        steps {
+            sh 'sleep 10'
+        }
     }
   }
  }
-}
