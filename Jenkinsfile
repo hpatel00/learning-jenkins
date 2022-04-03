@@ -5,13 +5,13 @@ pipeline {
 //         ansiColor('xterm')
 //     }
 
+  triggers {
+    pollSCM('*/1 * * * *')
+  }
+
   environment {
     ENV_URL = "pipeline.google.com"
     SSH_CREDS = credentials("SSH")
-  }
-
-  triggers {
-    pollSCM('*/1 * * * *')
   }
 
   parameters {
