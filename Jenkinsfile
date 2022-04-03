@@ -6,10 +6,11 @@ pipeline {
   }
 
   stages {
-    environment {
-      ENV_URL = "stage.google.com"
-    }
+
     stage('One') {
+      environment {
+        ENV_URL = "stage.google.com"
+      }
       steps {
         addShortText background: '', borderColor: '', color: '', link: '', text: 'One'
         echo "One"
