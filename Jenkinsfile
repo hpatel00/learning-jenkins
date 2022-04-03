@@ -76,6 +76,7 @@
 pipeline {
   agent {
     node { label 'workstation' }
+//     label 'workstation'
   }
   stages {
 
