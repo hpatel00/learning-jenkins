@@ -74,7 +74,9 @@
 //
 
 pipeline {
-  agent any
+  agent {
+    agent { node { label 'workstation' } }
+  }
   stages {
 
     stage('Parallel') {
