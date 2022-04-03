@@ -3,6 +3,7 @@ pipeline {
 
   environment {
     ENV_URL = "pipeline.google.com"
+    SSH_CREDS = credentials("SSH")
   }
 
   stages {
@@ -14,7 +15,10 @@ pipeline {
       steps {
         addShortText background: '', borderColor: '', color: '', link: '', text: 'One'
         echo "One"
-        sh 'echo ENV_URL = ${ENV_URL}'
+        sh '''
+            echo ENV_URL = ${ENV_URL}
+            env
+        '''
       }
     }
 
