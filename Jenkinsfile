@@ -157,4 +157,10 @@ node{
     stage('test'){
         print 'Hello World'
     }
+    //stages can be dynamically created:
+    if (env.BUILD_URL==""){
+        stage('test2'){
+                print 'Goodbye World'
+            }
+    }
 }
